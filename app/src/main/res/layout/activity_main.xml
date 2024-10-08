@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="monospace">
+
+        <TextView
+            android:id="@+id/MC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="348dp"
+            android:text="@string/MC"
+            android:textAllCaps="true"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/priseEstate"
+            android:layout_width="165sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/priseEstate"
+            android:inputType="number"
+            android:textColor="@color/green"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MC" />
+
+        <EditText
+            android:id="@+id/initialPayment"
+            android:layout_width="165sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/initialPayment"
+            android:inputType="number"
+            android:textColor="@color/green"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MC" />
+
+        <EditText
+            android:id="@+id/interestRate"
+            android:layout_width="165sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/interestRate"
+            android:inputType="number"
+            android:textColor="@color/green"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priseEstate" />
+
+        <EditText
+            android:id="@+id/term"
+            android:layout_width="165sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/term"
+            android:inputType="number"
+            android:textColor="@color/green"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/initialPayment" />
+
+
+        <Button
+            android:id="@+id/learn"
+            android:layout_width="180sp"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="monospace"
+            android:text="@string/learn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MC"
+            app:layout_constraintVertical_bias="0.829" />
+
+        <TextView
+            android:id="@+id/monthlyPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:text="@string/monthlyPayment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loanAmount"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="188dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/loanAmount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/requiredIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="260dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/requiredIncome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/amountOfInterest"
+            android:layout_width="150dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="112dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/amountOfInterest"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/resRequiredIncome"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="280dp"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resMonthlyPayment"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resAmountOfInterest"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="144dp"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resLoanAmount"
+            android:layout_width="150sp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="216dp"
+            android:ems="10"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

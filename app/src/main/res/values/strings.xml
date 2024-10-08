@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Калькулятор Ипотеки</string>
+    <string name="MC" translatable="false">Расчёт ипотеки</string>
+    <string name="priseEstate" translatable="false">Цена имущества</string>
+    <string name="initialPayment" translatable="false">Первоначальный взнос</string>
+    <string name="interestRate" translatable="false">Процентная ставка</string>
+    <string name="term" translatable="false">Срок ипотеки</string>
+    <string name="learn" translatable="false">Узнать</string>
+    <string name="monthlyPayment" translatable="false">Ежемесячный платёж :</string>
+    <string name="loanAmount" translatable="false">Сумма кредита :</string>
+    <string name="requiredIncome" translatable="false">Необходимый доход :</string>
+    <string name="amountOfInterest" translatable="false">Сумма переплаты :</string>
+</resources>

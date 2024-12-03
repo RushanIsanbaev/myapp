@@ -1,107 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fontFamily="monospace">
+        android:fontFamily="monospace"
+        tools:layout_editor_absoluteX="-186dp"
+        tools:layout_editor_absoluteY="-72dp">
 
-        <TextView
-            android:id="@+id/MC"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="348dp"
-            android:text="@string/MC"
-            android:textAllCaps="true"
-            android:textColor="@color/green"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/priseEstate"
-            android:layout_width="165sp"
-            android:layout_height="50sp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:autofillHints=""
-            android:ems="10"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="210dp"
+            android:layout_marginBottom="220dp"
+            android:gravity="center"
             android:hint="@string/priseEstate"
-            android:inputType="number"
-            android:textColor="@color/green"
-            android:textSize="11sp"
+            android:orientation="horizontal"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="9"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperText="@string/noMore"
+            app:helperTextTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MC" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/initialPayment"
-            android:layout_width="165sp"
-            android:layout_height="50sp"
-            android:layout_marginTop="16dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/priseEstate"
+                android:layout_width="172dp"
+                android:layout_height="55dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="11sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="450dp"
             android:layout_marginEnd="16dp"
-            android:autofillHints=""
-            android:ems="10"
+            android:layout_marginBottom="220dp"
+            android:gravity="center"
             android:hint="@string/initialPayment"
-            android:inputType="number"
-            android:textColor="@color/green"
-            android:textSize="11sp"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:helperText="@string/minInsert"
+            app:helperTextTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MC" />
-
-        <EditText
-            android:id="@+id/interestRate"
-            android:layout_width="165sp"
-            android:layout_height="50sp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="80dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/interestRate"
-            android:inputType="number"
-            android:textColor="@color/green"
-            android:textSize="11sp"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/priseEstate" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/term"
-            android:layout_width="165sp"
-            android:layout_height="50sp"
-            android:layout_marginTop="80dp"
-            android:layout_marginEnd="16dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/term"
-            android:inputType="number"
-            android:textColor="@color/green"
-            android:textSize="11sp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/initialPayment"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="11sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginEnd="210dp"
+            android:layout_marginBottom="130dp"
+            android:gravity="center"
+            android:hint="@string/interestRate"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:helperText="@string/minInsertDebt"
+            app:helperTextTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/initialPayment" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/interestRate"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="11sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="130dp"
+            android:hint="@string/term"
+            app:boxBackgroundMode="outline"
+            app:endIconMode="clear_text"
+            app:helperText="@string/termDebt"
+            app:helperTextTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/term"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="11sp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/learn"
             android:layout_width="180sp"
             android:layout_height="50sp"
+            android:layout_marginBottom="76dp"
             android:backgroundTint="@color/purple"
             android:fontFamily="monospace"
             android:text="@string/learn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MC"
             app:layout_constraintVertical_bias="0.829" />
 
-        <TextView
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
             android:id="@+id/monthlyPayment"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
@@ -193,6 +252,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

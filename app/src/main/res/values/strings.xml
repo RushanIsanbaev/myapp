@@ -15,8 +15,5 @@
     <string name="minInsertDebt" translatable="false">Не менее 0.1 %</string>
     <string name="termDebt" translatable="false">Не менее 1 года</string>
 
-    <string name="priseEstateE" translatable="false">Цена имущества</string>
-    <string name="initialPaymentE" translatable="false">Первоначальный взнос</string>
-    <string name="interestRateE" translatable="false">Процентная ставка</string>
-    <string name="termE" translatable="false">Срок ипотеки</string>
+    <string name="arithmeticException" translatable="false">Что - то пошло не так.<br> Проверьте поле ввода.</br></string>
 </resources>
